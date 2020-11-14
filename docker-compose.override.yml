@@ -2,4 +2,5 @@ version: '3.3'
 
 services: 
   flask_app:
-    image: 2434634/drozhzin_flask_app
+    ports: 
+    - 5000:5000
