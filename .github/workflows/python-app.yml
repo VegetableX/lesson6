@@ -54,3 +54,13 @@ jobs:
       with:
         push: true
         tags: 2434634/drozhzin_flask_app:latest
+    - name: Restart service
+      uses: fifsky/ssh-action@master
+      with:
+        command: |
+          cd Drozhzhin
+          docker-compose --no-ansi pull
+          docker-compose --no-ansi up -d
+        host: ${{ secrets.SSH_HOST}}
+        user: student
+        key: ${{ secrets.SSH_PRIVATE_KEY}}
