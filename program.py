@@ -14,4 +14,4 @@ def Drozhzhin():
     return 'Hello from CI with GitHub Actions by Drozhzhin'
 @app.route('/Drozhzhin2')
 def Drozhzhin2():
-    return 'Hello from Vegetable!'
+    return 'Hello from Vegetable Pumpkin!'
